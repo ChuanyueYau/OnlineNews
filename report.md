@@ -113,7 +113,7 @@ the performance measures can vary a lot. Recall is a good measure if the purpose
 news as many as we can. However, I preferred f1-score more since it conveys the balance between the precision 
 and the recall, focusing on both the quantity and the quality of extracted popular news. The best accuracy 
 score attained by the benchmark is 69%.<br>
-![benchmark](https://github.com/ChuanyueYau/OnlineNews/blob/master/report_images/benchmark.png)
+![benchmark](https://github.com/ChuanyueYau/OnlineNews/blob/master/report_images/benchmark.png | width=200)
 
 
 
@@ -161,9 +161,9 @@ performance as the training set size increased.For the time of ‘Model Training
 second highest training time, which is OK: since our model is offline model and the dataset is static, thus we have 
 enough time to train. The key is the time of ‘Model Predicting’. Apart from SVC, other models are very fast.<br><br>
 The best classifiers with highest accuracy (given whole training set is trained):<br>
-![acc_best](https://github.com/ChuanyueYau/OnlineNews/blob/master/report_images/inital_model_acc.png)<br>
+![acc_best](https://github.com/ChuanyueYau/OnlineNews/blob/master/report_images/inital_model_acc.png | width=200)<br>
 The best classifiers with highest f1score (given whole training set is trained):<br>
-![f1_best](https://github.com/ChuanyueYau/OnlineNews/blob/master/report_images/inital_model_f1.png)<br>
+![f1_best](https://github.com/ChuanyueYau/OnlineNews/blob/master/report_images/inital_model_f1.png | width=200)<br>
 Nevertheless, besides Gradient Boosting Classifier, I still keep Adaboosting classifier as the best classifiers since the results for adaboosting are just slightly worse from that for Gradient Boosting Classifier
 
 ### Refinement
@@ -215,7 +215,7 @@ GradientBoostingClassifier(criterion='friedman_mse', init=None,
 ### Model Evaluation and Validation 
 
 Performance metrics for unoptimized model and optimized model<br>
-![optimized](https://github.com/ChuanyueYau/OnlineNews/blob/master/report_images/optimized.png)<br>
+![optimized](https://github.com/ChuanyueYau/OnlineNews/blob/master/report_images/optimized.png | width=200)<br>
 After feature selection and parameters tunning, both accuracy score and f-score for validation dataset are 
 slightly improved. The Gradient Boosting performs better than Ada Boosting on both performance measures, 
 therefore it (Gradient Boosting) is selected to be the final model. Moreover, the scores for validation dataset 
